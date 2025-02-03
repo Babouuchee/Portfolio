@@ -1,4 +1,6 @@
 <script>
+import { NuxtLink } from '#components';
+
 export default {
     data() {
         return {
@@ -182,13 +184,17 @@ export default {
                     </div>
                 </div>
                 <div class="p-4 border-t border-gray-800 flex items-center space-x-2 font-mono">
-                    <Icon name="mingcute:terminal-line" class="text-green-500"/>
-                    <span class="text-green-500">→</span>
-                    <span class="text-green-400">
+                    <Icon name="mingcute:terminal-line" class="text-orange-500"/>
+                    <span class="text-orange-500">→</span>
+                    <span class="text-orange-400">
                         {{ typing ? 'Loading next module...' : 'Ready for next command' }}
                     </span>
-                    <span :class="`w-2 h-5 bg-green-500 ${typing ? 'animate-pulse' : 'animate-blink'}`"></span>
+                    <span :class="`w-2 h-5 bg-orange-500 ${typing ? 'animate-pulse' : 'animate-blink'}`"></span>
                 </div>
+            </div>
+            <div>
+                <p class="text-gray-400 text-center text-lg mt-8">I'm looking for an internship !</p>
+                <p class="text-gray-400 text-center text-lg mt-2">See how to contact me <NuxtLink to="/Contact" class="text-orange-500">here</NuxtLink>.</p>
             </div>
         </div>
     </div>
