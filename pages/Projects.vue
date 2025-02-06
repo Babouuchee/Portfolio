@@ -18,7 +18,7 @@ const Projects = ref([
     },
     {
         name: 'AdventOfCode',
-        description: `10 exercices each day of the beginning of december of 2024`,
+        description: `10 exercices each day of the beginning of december of 2024, the rest of the exercices will come`,
         tech: ['Python', 'Algorithm'],
         image: 'adventofcode.png',
         github: 'https://github.com/Babouuchee/AdventOfCode2024'
@@ -41,8 +41,8 @@ const Projects = ref([
 </script>
 <!-- To do later: Details of projects by clicking on it -> pop up in the middle -->
 <template>
-    <div class="bg-gray-900 min-h-screen">
-        <div class="py-10">
+    <div class="min-h-screen" :style="{ backgroundColor: '#EBE0C9' }">
+        <div class="py-44">
             <div class="container mx-auto px-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     <div v-for="(project, index) in Projects" :key="index" class="mb-8 flex items-center justify-between">

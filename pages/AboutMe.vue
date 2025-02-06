@@ -142,7 +142,7 @@ export default {
 </script>
 
 <template>
-    <div class="min-h-screen text-gray-300 py-16 bg-gray-900">
+    <div class="min-h-screen text-gray-300 py-44" :style="{ backgroundColor: '#EBE0C9' }">
         <div class="max-w-7xl mx-auto">
             <div class="bg-gray-800 rounded-t-lg p-3 flex items-center space-x-2">
                 <div class="w-3 h-3 rounded-full bg-red-500"></div>

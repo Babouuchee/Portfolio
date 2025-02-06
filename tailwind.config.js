@@ -7,7 +7,14 @@ export default {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        '1.5': '0.375rem', // 6px
+      },
+      fontFamily: {
+        custom: ['MyFont', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

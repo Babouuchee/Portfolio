@@ -1,7 +1,7 @@
 <!-- Info on how to contact me with github, mail and linkedin and about my intership search -->
 <template>
-    <div class="bg-gray-900 min-h-screen">
-        <div class="max-w-7xl mx-auto py-24 text-gray-300 text-center text-xl">
+    <div class="min-h-screen" :style="{ backgroundColor: '#EBE0C9' }">
+        <div class="max-w-7xl mx-auto py-44 text-gray-300 text-center text-xl text-black">
             <div>
                 <h1 class="text-3xl">Get in touch</h1>
                 <p class="pt-10">I'm looking for a 4 month internship as a developer</p>

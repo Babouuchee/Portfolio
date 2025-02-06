@@ -19,10 +19,14 @@ const pages = ref([
 ])
 </script>
 <template>
-    <nav class="bg-gray-800 flex items-center justify-center text-white" aria-label="Navbar section">
-        <NuxtLink v-for="page in pages"
-            class="mx-8 hover:border-t-orange-300 border-t-2 border-transparent py-6 hover:text-orange-500"
-            exact-active-class="text-orange-500 border-t-orange-300 border-t-2"
-            :to="page.link">{{ page.name }}</NuxtLink>
+    <nav class="fixed top-0 left-0 w-full flex items-center justify-center pt-10 pb-6" aria-label="Navbar section">
+        <ul class="font-bold text-gray-600 rounded-full bg-white bg-opacity-40 backdrop-blur-sm p-3 py-3">
+            <li>
+                <NuxtLink v-for="page in pages"
+                class="py-1.5 px-6"
+                exact-active-class="rounded-full bg-orange-300"
+                :to="page.link">{{ page.name }}</NuxtLink>
+            </li>
+        </ul>
     </nav>
 </template>
