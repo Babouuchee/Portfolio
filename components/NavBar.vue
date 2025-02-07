@@ -19,16 +19,8 @@ export default {
                 <NuxtLink v-for="page in pages"
                 class="py-1.5 px-6 transition-all duration-300 ease-in-out"
                 exact-active-class="rounded-full bg-orange-300"
-                :data-active="$route.path === page.link"
                 :to="page.link">{{ page.name }}</NuxtLink>
             </li>
         </ul>
     </nav>
 </template>
-<style scoped>
-/* Add sliding animation */
-[data-active="true"] {
-    background-color: #f97316; /* bg-orange-300 */
-    transition: background-color 0.3s ease-in-out;
-}
-</style>

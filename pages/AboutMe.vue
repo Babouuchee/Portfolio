@@ -173,7 +173,7 @@ export default {
                         <div class="flex-1 overflow-x-auto">
                             <div v-for="(line, index) in contentFiles[selectedFile]"
                                 :key="index"
-                                :class="`transition-all duration-200
+                                :class="`transition-all duration-150
                                     ${index < visibleLines
                                         ? 'opacity-100 transform translate-y-0'
                                         : 'opacity-0 transform translate-y-2'}`"
