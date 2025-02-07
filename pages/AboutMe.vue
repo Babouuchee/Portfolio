@@ -148,7 +148,7 @@ export default {
                 <div class="w-3 h-3 rounded-full bg-red-500"></div>
                 <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
                 <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                <div class="flex-1 text-center text-sm font-mono">
+                <div class="flex-1 text-center text-md font-mono">
                     about_me.terminal
                 </div>
             </div>
@@ -157,7 +157,7 @@ export default {
                     <button v-for="filename in Object.keys(contentFiles)"
                         :key="filename"
                         @click="setSelectedFile(filename)"
-                        :class="`flex items-center space-x-2 px-4 py-2 text-sm font-mono transition-colors
+                        :class="`flex items-center space-x-2 px-4 py-2 text-md font-mono transition-colors
                             ${selectedFile === filename
                             ? 'bg-gray-800 text-white border-t-2 border-orange-500' 
                             : 'text-gray-500 hover:text-gray-300'}`">
@@ -165,7 +165,7 @@ export default {
                         <span>{{ filename }}</span>
                     </button>
                 </div>
-                <div class="p-4 font-mono text-sm">
+                <div class="p-4 font-mono text-md">
                     <div class="flex">
                         <div class="text-gray-600 pr-4 text-right select-none">
                             <div v-for="(_, index) in contentFiles[selectedFile]" :key="index">{{ index + 1 }}</div>
@@ -193,8 +193,8 @@ export default {
                 </div>
             </div>
             <div>
-                <p class="text-gray-400 text-center text-lg mt-8">I'm looking for an internship !</p>
-                <p class="text-gray-400 text-center text-lg mt-2">See how to contact me <NuxtLink to="/Contact" class="text-orange-500">here</NuxtLink>.</p>
+                <p class="text-gray-600 text-center text-lg mt-8">I'm looking for an internship !</p>
+                <p class="text-gray-600 text-center text-lg mt-2">See how to contact me <NuxtLink to="/Contact" class="text-orange-500">here</NuxtLink>.</p>
             </div>
         </div>
     </div>

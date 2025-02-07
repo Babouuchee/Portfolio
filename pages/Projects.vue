@@ -46,13 +46,13 @@ const Projects = ref([
             <div class="container mx-auto px-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     <div v-for="(project, index) in Projects" :key="index" class="mb-8 flex items-center justify-between">
-                        <div class="bg-gray-800 p-4 shadow-md rounded-xl text-white">
+                        <div class="bg-white/50 backdrop-blur-sm p-4 shadow-md rounded-xl text-orange-600">
                             <h3 class="text-xl font-semibold">{{ project.name }}</h3>
                             <img :src="project.image" :alt="project.name" class="w-full h-60 object-cover rounded-md my-3">
                             <div class="mt-4">
                                 <span v-for="tech in project.tech" class="px-3 py-1 mr-2 text-sm bg-orange-200 text-orange-800 rounded-full">{{ tech }}</span>
                             </div>
-                            <p class="text-gray-200 my-4">{{ project.description }}</p>
+                            <p class="text-orange-600 my-4">{{ project.description }}</p>
                         </div>
                     </div>
                 </div>
