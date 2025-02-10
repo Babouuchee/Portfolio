@@ -5,7 +5,7 @@ import plugin from "tailwindcss";
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["@/assets/css/main.css"],
-  modules: ['@nuxt/icon', '@nuxtjs/color-mode'],
+  modules: ['@nuxt/icon', '@nuxtjs/color-mode', '@nuxthub/core'],
 
   postcss: {
     plugins: {
